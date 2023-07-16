@@ -1,0 +1,14 @@
+/*light EDITION*/
+/* @media (prefers-color-scheme: light){
+:root { */
+    :root[data-theme="light"]{
+        --background-color:rgba(118, 193, 255, 0.877);
+        --theme-color:rgba(118, 193, 255, 0.877);
+        --text-color:rgba(0, 0, 0, 0.87);
+        --color-light:rgb(21, 150, 255);
+        --color-dark:rgb(0, 109, 199);
+        --color-alt:blue;
+        color-scheme:light;
+        --transition: 0.2s ease-in-out;
+        --invert-logo:invert(100%);
+    }

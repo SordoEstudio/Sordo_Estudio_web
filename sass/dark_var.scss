@@ -1,0 +1,14 @@
+/* DARK EDITION*/
+/* @media (prefers-color-scheme: dark){ */
+/* :root { */
+    :root[data-theme="dark"]{
+        --background-color:rgb(5, 5, 15);
+        --theme-color:rgba(0, 0, 0, 0.87);
+        --text-color:whitesmoke;
+        --color-light:rgb(74, 174, 255);
+        --color-dark:rgb(21, 150, 255);
+        --color-alt:blue;
+        color-scheme:dark;
+        --transition: 0.2s ease-in-out;
+        --invert-logo: none;
+    }

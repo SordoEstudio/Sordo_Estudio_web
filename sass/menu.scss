@@ -1,0 +1,21 @@
+.menu{
+    align-items: center;
+    display:flex;
+    border-radius: 5px;
+}
+.menu-item{
+    padding: 1rem 2rem;
+    color:var(--text-color);
+    &:hover{
+        transition: 0.5s;
+        color:var(--color-light);
+    }
+}
+.material-symbols-outlined{
+    border-bottom: 2px solid var(--theme-);
+    color:var(--text-color);
+    &:hover{
+        transition: 0.5s;
+        color: var(--text-color);
+    }
+}

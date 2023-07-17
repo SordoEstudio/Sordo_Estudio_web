@@ -11,6 +11,8 @@
   color-scheme: dark;
   --transition: 0.2s ease-in-out;
   --invert-logo: none;
+  --back-1:black;
+  --back-2:rgb(0, 0, 43);
 }
 
 /*light EDITION*/
@@ -26,6 +28,8 @@
   color-scheme: light;
   --transition: 0.2s ease-in-out;
   --invert-logo:invert(100%);
+  --back-2: whitesmoke;
+  --back-1:rgba(76, 175, 255, 0.877);
 }
 
 :root[data-theme=light] .lightmodebtn {
@@ -68,6 +72,7 @@ header h1 {
 header .logo {
   margin: 0px 15px;
   width: 10%;
+  min-width: 30px;
 }
 
 .hdr {
@@ -75,6 +80,26 @@ header .logo {
   align-items: center;
 }
 
+@media only screen and (max-width: 1090px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header .logo {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 890px) {
+  header {
+    flex-direction: column;
+    right: 0;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 580px) {
+  header {
+    align-items: left;
+  }
+}
 .menu {
   align-items: center;
   display: flex;
@@ -97,6 +122,34 @@ header .logo {
 .material-symbols-outlined:hover {
   transition: 0.5s;
   color: var(--text-color);
+}
+
+@media only screen and (min-width: 580px) {
+  .navbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .fuera {
+    display: none;
+  }
+  .menu {
+    flex-direction: column;
+  }
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar .container-fluid {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.offcanvas-body {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.text-bg {
+  background-color: var(--theme-color);
 }
 
 footer {
@@ -315,6 +368,22 @@ h2, h3 {
   font-size: 1.5rem;
   text-align: center;
   font-style: italic;
+}
+
+@media only screen and (max-width: 890px) {
+  .galeria, #galeria {
+    display: none;
+  }
+  .fotos {
+    display: none;
+  }
+}
+.bi-moon, .bi-sun {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 15px;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

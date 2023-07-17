@@ -19,3 +19,28 @@
         color: var(--text-color);
     }
 }
+@media only screen and (min-width: 580px){
+    .navbar{
+        display:none;
+    }
+}
+@media only screen and (max-width: 580px){
+    .fuera{
+        display:none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0);
+    .container-fluid{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.offcanvas-body{
+    background-color: rgba(0, 0, 0, 0);
+}
+.text-bg{
+    background-color: var(--theme-color);
+}

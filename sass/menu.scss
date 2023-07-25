@@ -35,8 +35,7 @@
 .navbar{
     background-color: rgba(0, 0, 0, 0);
     .container-fluid{
-        background-color: rgba(0, 0, 0, 0);
-    }
+        @extend .navbar;}
 }
 .offcanvas-body{
     background-color: rgba(0, 0, 0, 0);

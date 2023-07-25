@@ -377,6 +377,12 @@ h2, h3 {
   .fotos {
     display: none;
   }
+  .sp1, .sp2 {
+    margin: 0 10px;
+    padding: 10px;
+    width: 70%;
+    align-self: start;
+  }
 }
 .bi-moon, .bi-sun {
   position: fixed;
@@ -384,6 +390,31 @@ h2, h3 {
   right: 10px;
   width: 15px;
   margin: 5px;
+}
+
+.titulo {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.container {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

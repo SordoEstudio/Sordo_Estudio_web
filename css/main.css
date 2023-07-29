@@ -125,7 +125,7 @@ header .logo {
 }
 
 @media only screen and (min-width: 580px) {
-  .navbar {
+  .navbar, .navbar .container-fluid {
     display: none;
   }
 }
@@ -137,13 +137,9 @@ header .logo {
     flex-direction: column;
   }
 }
-.navbar {
+.navbar, .navbar .container-fluid {
   background-color: rgba(0, 0, 0, 0);
 }
-.navbar .container-fluid {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .offcanvas-body {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -152,6 +148,14 @@ header .logo {
   background-color: var(--theme-color);
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   color: var(--text-color);
 }
@@ -406,15 +410,6 @@ h2, h3 {
   animation-duration: 2s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

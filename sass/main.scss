@@ -10,6 +10,9 @@
 // @import "";
 @import "footer";
 
+$none-s:none;
+$ten:10px;
+
 body{
     background-color: var(--background-color);
     // background-image: linear-gradient(var(--back-1),var(--back-2));
@@ -28,13 +31,13 @@ h3{
     color: var(--color-light);
 }
 li {
-    list-style-type: none;
+    list-style-type: $none-s;
 }
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a {
-    text-decoration: none;
+    text-decoration: $none-s;
     color:var(--text-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -83,7 +86,7 @@ h2, h3{
     flex-direction:column;
 }
 #enviar{
-    padding: 5px 10px;
+    padding: 5px $ten;
     margin-top: 30px;
     background-color: var(--color-dark);
     font-size: larger;
@@ -101,8 +104,8 @@ h2, h3{
     margin-bottom: 0px;
 }
 .sp1, .sp2{
-    margin:0 10px;
-    padding: 10px;
+    margin:0 $ten;
+    padding: $ten;
     width: 45%;
     align-self: start;
 }
@@ -182,14 +185,14 @@ justify-content: space-around;
 }
 @media only screen and (max-width: 890px){
     .galeria, #galeria{
-        display:none;
+        display:$none-s;
     }
     .fotos{
-        display:none;
+        display:$none-s;
     }
     .sp1, .sp2{
-        margin:0 10px;
-        padding: 10px;
+        margin:0 $ten;
+        padding: $ten;
         width: 70%;
         align-self: start;
     }
@@ -197,8 +200,8 @@ justify-content: space-around;
 
 .bi-moon, .bi-sun{
     position:fixed;
-    bottom:10px;
-    right:10px;
+    bottom:$ten;
+    right:$ten;
     width:15px;
     margin:5px;
 }

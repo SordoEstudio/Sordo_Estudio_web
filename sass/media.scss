@@ -1,0 +1,14 @@
+@media only screen and (max-width: 890px){
+    .galeria, #galeria{
+        display:$none-s;
+    }
+    .fotos{
+        display:$none-s;
+    }
+    .sp1, .sp2{
+        margin:0 $ten;
+        padding: $ten;
+        width: 70%;
+        align-self: start;
+    }
+}
